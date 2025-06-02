@@ -1,13 +1,10 @@
-﻿using Conventions.AsyncAwait;
-
-namespace Conventions
+﻿namespace Conventions
 {
     internal class Program
     {
         static async Task Main(string[] args)
         {
-            var token = new CancellationTokenSource(2000);
-            await TimeoutProcesor.StartLongRunningTask(token.Token);
+            
         }
 
         static Task<int> ReadNr()
